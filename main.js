@@ -17,6 +17,16 @@ const wordCounter = (value) => {
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
+  //console.log(btnText);
+  const mainBody = document.querySelector("body");
+  if(btnText.trim() === "Dark Mode") {
+    mainBody.style = "background-color:black;"
+    toggleButton.innerText = "Light Mode";
+  } else {
+    mainBody.style = "background-color: white;"
+    toggleButton.innerText = "Dark Mode";
+  }
+  
 }
 
 // ************************************************ //
